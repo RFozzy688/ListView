@@ -54,11 +54,14 @@ namespace ListviewExample
             ListViewItem item4 = new ListViewItem("Желание 4", 4);
             item4.SubItems.Add("500 грн");
 
+            ListViewItem item5 = new ListViewItem("Желание 5", 5);
+            item5.SubItems.Add("1500 грн");
+
             listView1.Columns.Add("Название желания", 150, HorizontalAlignment.Left);
             listView1.Columns.Add("Цена", 145, HorizontalAlignment.Left);
 
             // Добавляем элементы в список
-            listView1.Items.AddRange(new ListViewItem[] { item1, item2, item3, item4 });
+            listView1.Items.AddRange(new ListViewItem[] { item1, item2, item3, item4, item5 });
 
             ImageList imageListSmall = new ImageList();
 
@@ -67,6 +70,7 @@ namespace ListviewExample
             imageListSmall.Images.Add(new Bitmap(Properties.Resources.monkey));
             imageListSmall.Images.Add(new Bitmap(Properties.Resources.pig));
             imageListSmall.Images.Add(new Bitmap(Properties.Resources.raccoon));
+            imageListSmall.Images.Add(new Bitmap(Properties.Resources.tree));
 
             listView1.SmallImageList = imageListSmall;
 
